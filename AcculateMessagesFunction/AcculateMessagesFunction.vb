@@ -2,14 +2,12 @@
 'RCET0265
 'Fall 2020
 'AcculateMessagesFuncton
-'https://github.com/jmcarth4/ 
+'https://github.com/jmcarth4/AcculateMessagesFunction
 
 Option Explicit On
 Option Strict On
 Option Compare Text
 Module AcculateMessagesFunction
-
-
     'A loop prompts the user to write a message. When Q is pressed all messages are displayed. 
     Sub Main()
         Dim userInput As String
@@ -33,9 +31,7 @@ Module AcculateMessagesFunction
             messages = ""
         ElseIf newMessage <> "" Then
             messages &= newMessage & vbNewLine
-
         End If
         Return messages
     End Function
-
 End Module
